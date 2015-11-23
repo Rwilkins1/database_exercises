@@ -5,15 +5,9 @@ OR first_name = 'Vidya'
 OR first_name = 'Maya')
 ORDER BY last_name ASC, first_name ASC;
 
-SELECT first_name, last_name, hire_date
-FROM employees
-WHERE last_name LIKE ('E%')
-OR last_name LIKE ('%E');
-
-SELECT first_name, last_name, hire_date
-FROM employees
-WHERE last_name LIKE ('E%')
-AND last_name LIKE ('%E');
+SELECT * FROM employees
+WHERE last_name LIKE ('%E%')
+ORDER BY emp_no ASC;
 
 SELECT first_name, last_name, hire_date, birth_date
 FROM employees
