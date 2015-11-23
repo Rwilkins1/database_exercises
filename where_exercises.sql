@@ -9,9 +9,10 @@ FROM employees
 WHERE last_name LIKE ('E%')
 OR last_name LIKE ('%E');
 
-SELECT first_name, last_name
+SELECT first_name, last_name, hire_date
 FROM employees
-WHERE last_name LIKE ('E%');
+WHERE last_name LIKE ('E%')
+AND last_name LIKE ('%E');
 
 SELECT first_name, last_name, hire_date
 FROM employees
