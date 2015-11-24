@@ -11,9 +11,8 @@ WHERE last_name LIKE '%E'
 AND last_name LIKE 'E%';
 
 
-SELECT first_name, last_name
+SELECT first_name, last_name, datediff(NOW(), hire_date)
 FROM employees
 WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
 AND birth_date LIKE '%-12-25'
-ORDER BY birth_date ASC, hire_date DESC
-LIMIT 5 OFFSET 45;
+ORDER BY birth_date ASC, hire_date DESC;
