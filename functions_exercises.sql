@@ -5,6 +5,11 @@ OR first_name = 'Vidya'
 OR first_name = 'Maya'
 GROUP BY gender ASC;
 
+SELECT CONCAT(first_name, last_name)
+FROM employees
+WHERE last_name LIKE '%E'
+AND last_name LIKE 'E%';
+
 
 SELECT first_name, last_name
 FROM employees
